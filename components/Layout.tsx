@@ -17,7 +17,7 @@ const Layout = ({ children, title = 'The Wedding of Andrew & Agnes' }: Props) =>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <Header />
-    <div className="mx-auto w-10/12">
+    <div>
         {children}
     </div>
     <footer>
