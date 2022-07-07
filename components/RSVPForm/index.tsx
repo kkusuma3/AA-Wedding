@@ -1,5 +1,3 @@
-// const TextInput = ()
-
 const RSVPForm = () => (
     <div className="flex flex-col justify-evenly md:w-2/3 mx-auto">
         <span className="text-white text-2xl md:text-4xl text-center">RSVP</span>

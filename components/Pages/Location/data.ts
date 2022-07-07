@@ -1,7 +1,6 @@
+import { MatrimonyImgSrc, ReceptionImgSrc } from "../../../shared/ImgSrc";
 import { Location } from "../../LocationCard/types";
 
-const MatrimonyImgSrc = '/img/MatrimonySketch.png';
-const ReceptionImgSrc = '/img/ReceptionSketch.png';
 
 export const LocationData: Array<Location> = [
     {

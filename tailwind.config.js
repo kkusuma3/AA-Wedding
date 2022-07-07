@@ -5,7 +5,9 @@ module.exports = {
       './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-      extend: {},
+        fontFamily: {
+            'abhaya-libre': ['Abhaya Libre', 'sans-serif']
+        }
     },
     plugins: [
     ],

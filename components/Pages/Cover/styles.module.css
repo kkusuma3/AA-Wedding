@@ -1,0 +1,9 @@
+.background {
+    background: url(/img/BGLanding.jpg) no-repeat top scroll; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    color: #45486A;
+}

@@ -1,12 +1,14 @@
+import { User } from "../../../shared/types/User";
+import Apology from "../../Apology";
 import Container from "../../Container";
 import RSVPForm from "../../RSVPForm";
 import styles from './styles.module.css';
 
-const RSVPPage = () => (
+const RSVPPage = ({ isOnline }: User) => (
     <Container isFullWidth={false}>
         <div className={styles.background}>
             <div className="mx-auto w-10/12">
-                <RSVPForm />
+                {isOnline ? <Apology /> : <RSVPForm />}
             </div>
         </div>
     </Container>

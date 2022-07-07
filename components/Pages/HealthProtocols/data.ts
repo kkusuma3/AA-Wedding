@@ -1,11 +1,5 @@
+import { IconMaskSrc, IconTempSrc, IconShakeSrc, IconSanitizeSrc, IconDistanceSrc, IconPLSrc } from "../../../shared/ImgSrc";
 import { HealthIconProps } from "../../HealthProtocolIcon/types";
-
-const IconMaskSrc = '/icons/icon_mask.png';
-const IconDistanceSrc = '/icons/icon_distance.png';
-const IconPLSrc = '/icons/icon_PL.png';
-const IconSanitizeSrc = '/icons/icon_sanitize.png';
-const IconShakeSrc = '/icons/icon_shake.png';
-const IconTempSrc = '/icons/icon_temp.png';
 
 export const HealthProtocolsData: Array<HealthIconProps> = [
     {

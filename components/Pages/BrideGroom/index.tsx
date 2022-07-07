@@ -1,12 +1,10 @@
+import { DiamondSVGSrc, GroomImgSrc, BrideImgSrc } from "../../../shared/ImgSrc";
 import Container from "../../Container";
-import DiamondLogo from "../../DiamondLogo";
-
-const BrideImgSrc = '/img/Bride.png';
-const GroomImgSrc = '/img/Groom.png';
+import LogoHeading from "../../LogoHeading";
 
 const BrideGroom = () => (
     <Container>
-        <DiamondLogo />
+        <LogoHeading imgSrc={DiamondSVGSrc} />
         <h2 className="text-3xl md:text-5xl text-center py-12 font-bold">Bride & Groom</h2>
         <div className="flex flex-col w-full md:w-2/3 mx-auto py-20">
             <div className="flex flex-row flex-wrap-reverse justify-between">
