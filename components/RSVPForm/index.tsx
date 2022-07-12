@@ -1,4 +1,5 @@
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
+import { appendSpreadsheet } from '../../shared/sheets';
 import { FormValues } from './types';
 import { SignupSchema } from './validation.schema';
 
@@ -10,6 +11,13 @@ const formInitialValues = {
     attendanceConfirmation: ''
 };
 
+const sheetSubmissionRow = {
+    Name: "",
+    Email: "",
+    "Phone Number": "",
+    "Number of Guests": 0,
+    "Attendance Confirmation": ""
+};
 
 const RSVPForm = () => (
     <Formik
@@ -17,12 +25,18 @@ const RSVPForm = () => (
         validationSchema={SignupSchema}
         onSubmit={(
             values: FormValues,
-            { setSubmitting }: FormikHelpers<FormValues>
+            { resetForm, setSubmitting }: FormikHelpers<FormValues>
         ) => {
-                setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-            }, 400);
+            sheetSubmissionRow.Name = values.name;
+            sheetSubmissionRow.Email = values.email;
+            sheetSubmissionRow['Phone Number'] = values.phoneNumber;
+            sheetSubmissionRow['Number Of Guests'] = values.numberOfGuests;
+            sheetSubmissionRow['Attendance Confirmation'] = values.attendanceConfirmation;
+            appendSpreadsheet(sheetSubmissionRow);
+            resetForm({
+                values: formInitialValues
+            })
+            setSubmitting(false);
         }}
      >  
         {({ isSubmitting }) => (

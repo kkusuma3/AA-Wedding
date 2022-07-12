@@ -10,7 +10,7 @@ const HealthProtocols = () => (
     <>
         <div className={styles.background}>
             <Container>
-                <div className="flex flex-col justify-evenly space-y-6 w-3/4 mx-auto text-center">
+                <div className="flex flex-col justify-evenly space-y-6 w-3/4 mx-auto text-center text-white">
                     <h4 className="text-2xl md:text-3xl font-bold">Health Protocols</h4>
                     <span className="text-lg md:text-xl">With all due respect, invited guests must comply with the following protocols</span>
                     <div className="flex flex-row flex-wrap justify-evenly">

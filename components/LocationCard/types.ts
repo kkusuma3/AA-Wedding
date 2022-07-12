@@ -3,6 +3,12 @@ interface Image {
     alt: string;
 }
 
+interface LocationButton {
+    label: string;
+    href: string;
+    target: string;
+}
+
 export interface Location {
     image: Image;
     title: string;
@@ -11,7 +17,7 @@ export interface Location {
     location: string;
     address: string;
     city: string;
-    btnLabel: string;
+    buttonProp: LocationButton;
 }
 
 export interface LocationCardProps {

@@ -14,7 +14,11 @@ export const LocationData: Array<Location> = [
         location: 'Kapel Kolese Kanisius',
         address: 'Jl. Menteng Raya No. 64',
         city: 'Jakarta Pusat',
-        btnLabel: 'Livestream'
+        buttonProp: {
+            label: 'Livestream',
+            href: 'https://www.youtube.com/watch?v=--8ah5QPNXQ',
+            target: '_blank'
+        }
     },
     {
         image: {
@@ -27,6 +31,10 @@ export const LocationData: Array<Location> = [
         location: 'DoubleTree by Hilton - Makara Ballroom',
         address: 'Jl. Pegangsaan Timur No. 17',
         city: 'Jakarta Pusat',
-        btnLabel: 'RSVP'
+        buttonProp: {
+            label: 'RSVP',
+            href: '',
+            target: '_self'
+        }
     },
 ]

@@ -11,7 +11,7 @@ const LocationCard = ({
         location,
         address,
         city,
-        btnLabel
+        buttonProp
     } = locationProp;
     return (
         <div className="flex flex-col justify-between text-center">
@@ -26,7 +26,11 @@ const LocationCard = ({
                 <span className="text-md md:text-lg">{address}</span>
                 <span className="text-md md:text-lg">{city}</span>
             </div>
-            <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-blue-700">{btnLabel}</button>
+            <a href={buttonProp.href} target={buttonProp.target}>
+                <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-blue-700">
+                    {buttonProp.label}
+                </button>
+            </a>
         </div>
     );
 };
