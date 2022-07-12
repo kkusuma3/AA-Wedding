@@ -11,41 +11,57 @@ interface PhotoType {
 export const photos: Array<PhotoType> = [
     {
       src: GalleryPic1Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 1',
       width: 5,
       height: 3
     },
     {
       src: GalleryPic2Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 2',
       width: 5,
       height: 5
     },
     {
       src: GalleryPic3Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 3',
       width: 3,
       height: 4
     },
     {
       src: GalleryPic4Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 4',
       width: 4,
       height: 3
     },
     {
       src: GalleryPic5Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 5',
       width: 5,
       height: 2
     },
     {
       src: GalleryPic6Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 6',
       width: 4,
       height: 3
     },
     {
       src: GalleryPic7Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 7',
       width: 4,
       height: 3
     },
     {
       src: GalleryPic8Src,
+      srcSet: '',
+      title: 'Andrew & Agnes - Picture 8',
       width: 4,
       height: 3
     },

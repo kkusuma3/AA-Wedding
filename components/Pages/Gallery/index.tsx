@@ -32,9 +32,9 @@ const GalleryComponent = () => {
                         <Modal onClose={closeLightbox}>
                             <Carousel
                                 currentIndex={currentImage}
-                                // @ts-ignore
                                 views={photos.map(x => ({
                                     ...x,
+                                    source: x.src,
                                     srcset: x.srcSet,
                                     caption: x.title
                                 }))}
