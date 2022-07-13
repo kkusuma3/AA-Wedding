@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import { appendSpreadsheet } from '../../shared/sheets';
+import { Sheets } from '../../shared/types/Sheets';
 import { FormValues } from './types';
 import { SignupSchema } from './validation.schema';
 
@@ -32,7 +33,7 @@ const RSVPForm = () => (
             sheetSubmissionRow['Phone Number'] = values.phoneNumber;
             sheetSubmissionRow['Number Of Guests'] = values.numberOfGuests;
             sheetSubmissionRow['Attendance Confirmation'] = values.attendanceConfirmation;
-            appendSpreadsheet(sheetSubmissionRow);
+            appendSpreadsheet(sheetSubmissionRow, Sheets.RSVP);
             resetForm({
                 values: formInitialValues
             })

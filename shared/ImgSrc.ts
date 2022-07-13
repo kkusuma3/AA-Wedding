@@ -25,5 +25,11 @@ export const IconPLSrc = '/icons/icon_PL.svg';
 export const IconSanitizeSrc = '/icons/icon_sanitize.svg';
 export const IconShakeSrc = '/icons/icon_shake.svg';
 export const IconTempSrc = '/icons/icon_temp.svg';
+export const IconLeftSrc = '/icons/icon_left.svg';
+export const IconRightSrc = '/icons/icon_right.svg';
+export const IconLeftWhiteSrc = '/icons/icon_white_left.svg';
+export const IconRightWhiteSrc = '/icons/icon_white_right.svg';
+export const IconLineSrc = '/icons/icon_white_line.svg';
+export const IconLinePurpleSrc = '/icons/icon_purple_line.svg';
 
 export const WhiteWaveImgSrc = '/img/Wave-white.svg';
