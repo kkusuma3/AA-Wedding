@@ -1,5 +1,5 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
-import { AppendSpreadsheetProps, Sheets } from './types/Sheets';
+import { Sheets } from './types/Sheets';
 
 // Config variables
 const SPREADSHEET_ID = process.env.SPREADSHEET_ID;

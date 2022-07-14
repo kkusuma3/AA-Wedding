@@ -7,10 +7,10 @@ type Props = {
   children?: ReactNode
   title?: string
   fullPage?: boolean;
-  isOnline: boolean;
+  isOnline?: boolean;
 };
 
-const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = false, isOnline }: Props) => (
+const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = false, isOnline = false }: Props) => (
   <div className={styles.bgLayout}>
     <Head>
         <link href="http://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet" />
