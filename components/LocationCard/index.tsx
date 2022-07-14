@@ -1,3 +1,4 @@
+import { Link } from 'react-scroll';
 import { LocationCardProps } from "./types";
 
 const LocationCard = ({
@@ -26,11 +27,30 @@ const LocationCard = ({
                 <span className="text-md md:text-lg">{address}</span>
                 <span className="text-md md:text-lg">{city}</span>
             </div>
-            <a href={buttonProp.href} target={buttonProp.target}>
-                <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-purple-main">
-                    {buttonProp.label}
-                </button>
-            </a>
+            {
+                buttonProp.target === '' && 
+                (
+                    <Link
+                        activeClass="active"
+                        to={buttonProp.href}
+                        spy={true}
+                        smooth={true}
+                    >
+                        <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-purple-main">
+                            {buttonProp.label}
+                        </button>
+                    </Link>
+                )
+            }
+            {
+                buttonProp.target === '_blank' && (
+                        <a href={buttonProp.href} target={buttonProp.target}>
+                            <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-purple-main">
+                                {buttonProp.label}
+                            </button>
+                        </a>
+                )
+            }
         </div>
     );
 };

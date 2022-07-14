@@ -33,8 +33,8 @@ export const LocationData: Array<Location> = [
         city: 'Jakarta Pusat',
         buttonProp: {
             label: 'RSVP',
-            href: '',
-            target: '_self'
+            href: 'rsvp',
+            target: ''
         }
     },
 ]

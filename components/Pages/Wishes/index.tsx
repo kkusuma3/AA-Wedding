@@ -61,7 +61,16 @@ const Wishes = ({ isOnline }: User) => (
                                     className={ isOnline ? "text-black " + FormTextAreaClass : FormTextAreaClass }
                                     placeholder="Write your message here"
                                 />
-                                <button disabled={isSubmitting} className="m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-purple-main">Send</button>
+                                <button
+                                    disabled={isSubmitting}
+                                    className={
+                                        isOnline ?
+                                        "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-purple-main"
+                                        : "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 bg-white text-purple-main"
+                                    }
+                                >
+                                    Send
+                                </button>
                             </div>
                             <img className="hidden md:block" src={isOnline ? IconLineSrc : IconLinePurpleSrc} alt="Vertical Line"/>
                             <div className="w-full md:w-5/12 my-auto pt-10 md:pt-0">
