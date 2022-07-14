@@ -2,6 +2,7 @@ import { User } from "../../../shared/types/User";
 import Apology from "../../Apology";
 import Container from "../../Container";
 import RSVPForm from "../../RSVPForm";
+import { HashtagPageContent } from "../Hashtag";
 import styles from './styles.module.css';
 
 const RSVPPage = ({ isOnline }: User) => (
