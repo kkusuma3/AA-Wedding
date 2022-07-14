@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const RSVPPage = ({ isOnline }: User) => (
     <Container isFullWidth={false}>
-        <div className={styles.background}>
+        <div id="rsvp" className={styles.background}>
             <div className="mx-auto w-10/12">
                 {isOnline ? <Apology /> : <RSVPForm />}
             </div>

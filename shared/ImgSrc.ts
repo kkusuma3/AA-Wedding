@@ -9,6 +9,8 @@ export const QRCodeSrc = '/img/QRCode.png';
 export const BCALogoSrc = '/img/BCA-Logo.svg';
 export const MadeByLogoSrc = '/img/MadeBy-Logo.svg';
 export const BGLandingSrc = '/img/BGLanding.jpg';
+export const CoverDesktopSrc = '/img/cover_desktop.png';
+export const CoverMobileSrc = '/img/cover_mobile.jpg';
 
 export const GalleryPic1Src = '/img/gallery/Pic1.jpg';
 export const GalleryPic2Src = '/img/gallery/Pic2.jpg';

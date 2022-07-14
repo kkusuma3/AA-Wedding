@@ -1,9 +1,21 @@
 .background {
-    background: url(/img/BGLanding.jpg) no-repeat top scroll; 
+    background: url(/img/cover_desktop.png) no-repeat center 75% scroll; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
     color: #45486A;
+}
+
+@media (max-width: 768px) {
+    .background {
+        background: url(/img/cover_mobile.jpg) no-repeat top scroll; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: 100vh;
+        color: #45486A;
+    }
 }

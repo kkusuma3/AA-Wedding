@@ -19,6 +19,9 @@ const sheetSubmissionRow = {
     Wishes: ""
 };
 
+const FormInputClass = "bg-gray-200 w-full p-3 rounded-md";
+const FormTextAreaClass = "bg-gray-200 h-32 md:h-40 p-5 resize-none rounded-md";
+
 const Wishes = ({ isOnline }: User) => (
     <>
         <Formik
@@ -39,16 +42,29 @@ const Wishes = ({ isOnline }: User) => (
             {({ isSubmitting }) => (
                 <Form className={isOnline ? HealthProtocolsStyles.background : "bg-white"}>
                     <Container>
-                        <div className="flex flex-row justify-evenly space-x-4">
-                            <div className="flex flex-col justify-evenly space-y-6 text-center w-5/12">
+                        <div className="flex flex-row flex-wrap justify-evenly space-x-4">
+                            <div className="flex flex-col justify-evenly space-y-6 text-center w-full md:w-5/12">
                                 <h4 className="text-2xl md:text-4xl font-bold">Your Wishes</h4>
                                 <span className="text-md md:text-lg">Send your warmest wishes to the bride & groom</span>
-                                <Field type="name" name="name" id="wishes-name" placeholder="Name" className="bg-gray-200 w-full p-3 rounded-md"/>
-                                <Field component="textarea" rows="4" name="wishes" id="wishes-message" className="bg-gray-200 h-32 md:h-40 p-5 resize-none rounded-md" placeholder="Write your message here" />
-                                <button disabled={isSubmitting} className="m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-blue-700">Send</button>
+                                <Field
+                                    type="name"
+                                    name="name"
+                                    id="wishes-name"
+                                    placeholder="Name"
+                                    className={ isOnline ? "text-black " + FormInputClass : FormInputClass }
+                                />
+                                <Field
+                                    component="textarea"
+                                    rows="4"
+                                    name="wishes"
+                                    id="wishes-message"
+                                    className={ isOnline ? "text-black " + FormTextAreaClass : FormTextAreaClass }
+                                    placeholder="Write your message here"
+                                />
+                                <button disabled={isSubmitting} className="m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-purple-main">Send</button>
                             </div>
                             <img className="hidden md:block" src={isOnline ? IconLineSrc : IconLinePurpleSrc} alt="Vertical Line"/>
-                            <div className="w-5/12">
+                            <div className="w-full md:w-5/12 my-auto pt-10 md:pt-0">
                                 <WishesList isOnline={isOnline} />
                             </div>
                         </div>

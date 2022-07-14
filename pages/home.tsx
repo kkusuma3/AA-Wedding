@@ -11,7 +11,7 @@ import WeddingGifts from '../components/Pages/WeddingGifts';
 import { User } from '../shared/types/User';
 
 const IndexPage = ({ isOnline }: User) => (
-  <Layout title="The Wedding of Andrew & Agnes | Home">
+  <Layout title="The Wedding of Andrew & Agnes | Home" isOnline={isOnline}>
     <LogoHeading color=""/>
     <Gallery />
     <BrideGroom />

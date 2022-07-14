@@ -10,7 +10,7 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY.replace(/\\n/g, '\n');
 
 const doc = new GoogleSpreadsheet(SPREADSHEET_ID);
 
-export const appendSpreadsheet = async (row, sheetName: Sheets) => {
+const loadSheets = async() => {
     try {
         await doc.useServiceAccountAuth({
             client_email: CLIENT_EMAIL,
@@ -18,6 +18,15 @@ export const appendSpreadsheet = async (row, sheetName: Sheets) => {
         });
         // loads document properties and worksheets
         await doc.loadInfo();
+        return doc;
+    } catch (e) {
+        console.error('Error: ', e);
+    }
+}
+
+export const appendSpreadsheet = async (row, sheetName: Sheets) => {
+    try {
+        await loadSheets();
 
         let sheet;
         if (sheetName === 'RSVP') {
@@ -31,3 +40,15 @@ export const appendSpreadsheet = async (row, sheetName: Sheets) => {
         console.error('Error: ', e);
     }
 };
+
+export const getWishes = async() => {
+    try {
+        await loadSheets();
+
+        const sheet = doc.sheetsById[WISHES_SHEET_ID];
+        const rows = await sheet.getRows();
+        return rows;
+    } catch (e) {
+        console.error('Error: ', e);
+    }
+}

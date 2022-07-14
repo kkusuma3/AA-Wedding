@@ -8,7 +8,7 @@ interface Props {
 
 const Landing = ({ color }: Props) => {
     return (
-        <Container>
+        <Container additionalClasses="md:pt-4 pt-0">
             <div className="flex flex-col text-center">
                 <img src={LogoSVGSrc} alt="Wedding Logo" className="w-1/6 md:w-1/12 mx-auto"/>    
                 <h1 className="text-xl md:text-2xl uppercase py-1">The wedding Of</h1>

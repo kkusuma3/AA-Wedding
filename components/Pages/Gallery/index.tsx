@@ -22,7 +22,7 @@ const GalleryComponent = () => {
 
     return (
         <Container>
-            <div className="flex flex-col py-20">
+            <div id="gallery" className="flex flex-col pt-8 md:pt-20">
                 <LogoHeading imgSrc={DiamondSVGSrc} />
                 <h2 className="text-3xl md:text-5xl text-center py-12 font-bold">Gallery</h2>
                 <div>

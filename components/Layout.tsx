@@ -7,9 +7,10 @@ type Props = {
   children?: ReactNode
   title?: string
   fullPage?: boolean;
+  isOnline: boolean;
 };
 
-const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = false }: Props) => (
+const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = false, isOnline }: Props) => (
   <div className={styles.bgLayout}>
     <Head>
         <link href="http://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet" />
@@ -19,7 +20,7 @@ const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = 
     </Head>
     <div className="font-abhaya-libre">
         {
-            !fullPage && <Header /> 
+            !fullPage && <Header isOnline={isOnline} /> 
         }
         <div>
             {children}

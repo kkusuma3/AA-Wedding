@@ -5,8 +5,13 @@ module.exports = {
       './components/**/*.{js,ts,jsx,tsx}',
     ],
     theme: {
-        fontFamily: {
-            'abhaya-libre': ['Abhaya Libre', 'sans-serif']
+        extend: {
+            fontFamily: {
+                'abhaya-libre': ['Abhaya Libre', 'serif']
+            },
+            colors: {
+                'purple-main': '#474867'
+            }
         }
     },
     plugins: [

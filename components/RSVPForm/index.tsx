@@ -61,14 +61,14 @@ const RSVPForm = () => (
                     <div className="py-4">
                         <Field component="select" name="attendanceConfirmation" className="p-3 md:p-5 w-full rounded-md">
                             <option value="" disabled selected>Attendance Confirmation</option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
+                            <option value="Yes">Yes, I'm attending!</option>
+                            <option value="No">No, I can't make it</option>
                         </Field>
                     </div>
                 </div>
                 <span className="text-white text-md">{`*Required fields`}</span>
                 <button
-                    className="m-2 rounded-3xl w-1/3 mx-auto p-2 md:p-3 text-white bg-blue-700"
+                    className="m-2 rounded-3xl w-1/3 mx-auto p-2 md:p-3 text-white bg-purple-main"
                     disabled={isSubmitting}    
                 >
                     Submit

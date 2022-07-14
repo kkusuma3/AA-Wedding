@@ -14,7 +14,7 @@ const LocationCard = ({
         buttonProp
     } = locationProp;
     return (
-        <div className="flex flex-col justify-between text-center">
+        <div className="flex flex-col justify-between text-center py-10 md:py-0">
             <img src={image.src} alt={image.alt} className="py-4"/>
             <span className="text-lg md:text-2xl font-bold pt-2">{title}</span>
             <div className="flex flex-col justify-between py-2">
@@ -27,7 +27,7 @@ const LocationCard = ({
                 <span className="text-md md:text-lg">{city}</span>
             </div>
             <a href={buttonProp.href} target={buttonProp.target}>
-                <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-blue-700">
+                <button className="rounded-3xl w-1/2 mx-auto p-2 md:p-3 text-white bg-purple-main">
                     {buttonProp.label}
                 </button>
             </a>
