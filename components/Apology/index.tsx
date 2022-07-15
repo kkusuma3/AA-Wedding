@@ -9,9 +9,9 @@ const Apology = () => (
         </p>
         <hr />
         <p className="text-white text-md md:text-lg text-center">
-            Due to the limitations of the current pandemic, we apologize to all invitee for not being able to
-            directly invite all of you to our wedding reception. With all due respect, please allow us to invite you
-            to attend our virtual holy matrimony and give us prayers and blessing. Thank you.
+        Due to the current COVID situation and for everyone’s personal safety, we will be limiting our guest list to an intimate
+        number and ask that you accept our apologies for not having you attend in person. However, we do invite you to join us
+        virtually through the live stream. Thank you for your love and understanding.
         </p>
     </div>
 );
