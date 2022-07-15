@@ -65,8 +65,8 @@ const Wishes = ({ isOnline }: User) => (
                                     disabled={isSubmitting}
                                     className={
                                         isOnline ?
-                                        "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-purple-main"
-                                        : "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 bg-white text-purple-main"
+                                        "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 bg-white text-purple-main" 
+                                        : "m-2 rounded-3xl w-full mx-auto p-2 md:p-3 text-white bg-purple-main"
                                     }
                                 >
                                     Send
