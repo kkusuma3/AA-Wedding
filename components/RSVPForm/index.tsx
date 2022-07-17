@@ -72,7 +72,7 @@ const RSVPForm = () => {
                         </div>
                         <div className="py-4">
                             <Field component="select" name="attendanceConfirmation" className="p-3 md:p-5 w-full rounded-md">
-                                <option value="" disabled selected>Attendance Confirmation</option>
+                                <option value="" disabled selected>Attendance Confirmation*</option>
                                 <option value="Yes">Yes, I'm attending!</option>
                                 <option value="No">No, I can't make it</option>
                             </Field>
