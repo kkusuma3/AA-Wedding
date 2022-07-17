@@ -1,4 +1,3 @@
-import AOS from 'aos';
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import Gallery from '../components/Pages/Gallery';
@@ -13,16 +12,8 @@ import HealthProtocols from '../components/Pages/HealthProtocols';
 import WeddingGifts from '../components/Pages/WeddingGifts';
 import { User } from '../shared/types/User';
 import "aos/dist/aos.css";
-import { useEffect } from "react";
 
 const IndexPage = ({ isOnline }: User) => {
-    
-    useEffect(() => {
-        AOS.init({
-            once: true
-        });
-        AOS.refresh();
-    }, [])
 
     return (
         <Layout title="The Wedding of Andrew & Agnes | Home" isOnline={isOnline}>
