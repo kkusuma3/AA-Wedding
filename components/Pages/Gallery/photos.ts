@@ -13,22 +13,22 @@ export const photos: Array<PhotoType> = [
       src: GalleryPic1Src,
       srcSet: '',
       title: 'Andrew & Agnes - Picture 1',
-      width: 5,
-      height: 3
+      width: 3,
+      height: 1
     },
     {
       src: GalleryPic2Src,
       srcSet: '',
       title: 'Andrew & Agnes - Picture 2',
-      width: 5,
-      height: 5
+      width: 4,
+      height: 3
     },
     {
       src: GalleryPic3Src,
       srcSet: '',
       title: 'Andrew & Agnes - Picture 3',
-      width: 3,
-      height: 4
+      width: 4,
+      height: 3
     },
     {
       src: GalleryPic4Src,
@@ -41,8 +41,8 @@ export const photos: Array<PhotoType> = [
       src: GalleryPic5Src,
       srcSet: '',
       title: 'Andrew & Agnes - Picture 5',
-      width: 5,
-      height: 2
+      width: 3,
+      height: 1
     },
     {
       src: GalleryPic6Src,

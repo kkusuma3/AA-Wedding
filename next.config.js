@@ -19,4 +19,4 @@ module.exports = {
     images: {
         domains: ['aawedding.mo.cloudinary.net'],
     },
-  };
+};

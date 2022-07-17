@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import Gallery from '../components/Pages/Gallery';
 import Layout from '../components/Layout';
 import LogoHeading from '../components/Pages/Landing';
@@ -21,6 +23,7 @@ const IndexPage = ({ isOnline }: User) => (
     <Wishes isOnline={isOnline} />
     {!isOnline && <HealthProtocols /> }
     <WeddingGifts />
+    <ToastContainer autoClose={5000} />
   </Layout>
 );
 
