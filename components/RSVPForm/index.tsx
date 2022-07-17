@@ -23,7 +23,7 @@ const sheetSubmissionRow = {
 const RSVPForm = () => {
 
     const onSubmitClick = () => {
-        toast.success("Thank you for submitting your response! Hope to see you soon.", {
+        toast.success("Thank you for submitting your response!", {
             position: toast.POSITION.BOTTOM_CENTER
         })
     }
