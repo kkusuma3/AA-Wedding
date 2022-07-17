@@ -11,10 +11,10 @@
 @media (max-width: 768px) {
     .background {
         background: url(/img/BGHashtag.webp) no-repeat top scroll; 
-        -webkit-background-size: contain;
-        -moz-background-size: contain;
-        -o-background-size: contain;
-        background-size: contain;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         height: 244.72px;
     }
 }

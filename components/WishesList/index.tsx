@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { IconLeftSrc, IconLeftWhiteSrc,  IconRightSrc, IconRightWhiteSrc } from '../../shared/ImgSrc';
 import { getWishes } from '../../shared/sheets';
 import { User } from '../../shared/types/User';
-import { mockData } from "./data";
 import { Wishes } from './types';
 
 

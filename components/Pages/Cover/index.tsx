@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 
 const CoverPage = ({ isOnline }: User) => (
     <div className={styles.background}>
-        <div className="flex flex-col w-full h-full md:h-3/4 md:w-3/4 md:pt-10 m-auto text-center justify-around md:justify-evenly space-y-20 md:space-y-5">
+        <div className="flex flex-col w-full h-full md:h-3/4 md:w-3/4 md:pt-10 m-auto text-center justify-around md:justify-evenly space-y-40 md:space-y-5">
             <div className="md:space-y-4">
                 <img src={LogoSVGSrc} alt="Wedding Logo" className="w-1/4 md:w-1/12 mx-auto"/>
                 <div className="flex flex-col justify-evenly">    
