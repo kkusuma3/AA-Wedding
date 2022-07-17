@@ -1,4 +1,5 @@
-import { useState, useCallback } from 'react';
+import AOS from 'aos';
+import { useState, useCallback, useEffect } from 'react';
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { DiamondSVGSrc } from "../../../shared/ImgSrc";
@@ -20,12 +21,16 @@ const GalleryComponent = () => {
         setViewerIsOpen(false);
     };
 
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <Container>
             <div id="gallery" className="flex flex-col pt-8 md:pt-20">
                 <LogoHeading imgSrc={DiamondSVGSrc} />
-                <h2 className="text-3xl md:text-5xl text-center py-12 font-bold">Gallery</h2>
-                <div>
+                <h2 className="text-3xl md:text-5xl text-center py-12 font-bold" data-aos="fade-down">Gallery</h2>
+                <div data-aos="fade-down">
                     <Gallery photos={photos} onClick={openLightbox} />
                     <ModalGateway>
                         {viewerIsOpen ? (

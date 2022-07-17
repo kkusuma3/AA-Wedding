@@ -4,7 +4,7 @@ import LogoHeading from "../../LogoHeading";
 
 const WeddingGifts = () => (
     <Container>
-        <div id="gifts" className="flex flex-col py-20 text-center space-y-10">
+        <div id="gifts" className="flex flex-col py-20 text-center space-y-5 md:space-y-10">
             <LogoHeading imgSrc={WeddingIconSrc} />
             <h2 className="text-3xl md:text-5xl font-bold">Wedding Gifts</h2>
             <span className="text-md md:text-lg">To friends and family who would like to send us gifts, please send it through the following way</span>
