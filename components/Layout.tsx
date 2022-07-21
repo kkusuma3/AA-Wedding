@@ -14,6 +14,7 @@ const Layout = ({ children, title = 'The Wedding of Andrew & Agnes', fullPage = 
   <div className={styles.bgLayout}>
     <Head>
         <link href="http://fonts.cdnfonts.com/css/abhaya-libre-2" rel="stylesheet" />
+        <link rel="manifest" href="/site.webmanifest" />
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
